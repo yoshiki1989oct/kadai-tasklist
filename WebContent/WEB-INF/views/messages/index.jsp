@@ -6,7 +6,7 @@
         <ul>
             <c:forEach var="task" items="${tasks}">
                 <li>
-                    <a href="${pageContext.request.contextPath}/show?id=${task.id}">
+                    <a href="${pageContext.request.contextPath}/taskshow?id=${task.id}">
                         <c:out value="${task.id}" />
                     </a>
                     <c:out value="${task.content}" />
@@ -14,7 +14,7 @@
             </c:forEach>
         </ul>
 
-        <p><a href="${pageContext.request.contextPath}/new">新規タスクの投稿</a></p>
+        <p><a href="${pageContext.request.contextPath}/tasknew">新規タスクの投稿</a></p>
 
     </c:param>
 </c:import>
